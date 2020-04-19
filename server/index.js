@@ -18,14 +18,11 @@ mongoose
   .then(() => console.log("DB connected"))
   .catch((err) => console.log(err));
 
-
-app.get('/', (req,res) => {
+app.get("/", (req, res) => {
   res.json({
-    "helooooooooooooo"
-  })
-})
-
-
+    helooooooooooooo: "I am happy to deploy my app finally",
+  });
+});
 
 //  Auth
 app.get("/api/user/auth", auth, (req, res) => {
