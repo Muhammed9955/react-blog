@@ -18,6 +18,15 @@ mongoose
   .then(() => console.log("DB connected"))
   .catch((err) => console.log(err));
 
+
+app.get('/', (req,res) => {
+  res.json({
+    "helooooooooooooo"
+  })
+})
+
+
+
 //  Auth
 app.get("/api/user/auth", auth, (req, res) => {
   res.status(200).json({
